@@ -1,0 +1,223 @@
+/* 
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+*/
+
+/******************************************
+/* COLOURS
+/*******************************************/
+
+/* add a list of colours used in the project */
+
+/******************************************
+/* SENSIBLE DEFAULTS                   
+/*******************************************/
+
+* {
+     box-sizing: border-box;
+}
+img {
+	max-width:100%;
+}
+
+
+html {
+	background: #000;
+}
+
+/******************************************
+/* TYPOGRAPHY
+/*******************************************/
+
+/* add type styles here */
+
+
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+
+
+@media screen and (min-width: 500px) {
+
+
+
+h1 {
+    position: relative;
+    display: block;
+	color: #dbdbdb;
+    width: 30%;
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+	font-family: 'Merriweather', serif;
+}
+
+p, h2 {
+	font-size: .7rem;
+	line-height: 2em;
+	font-weight: 300;
+
+}
+
+p{
+	height: 15vh;
+	border-top: #dbdbdb;
+	color: #dbdbdb;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: .8px;
+	padding-right: 2%;
+
+}
+hr {
+	border-top: solid #dbdbdb 1px;
+}
+
+
+
+.left-column {
+	float: left;
+	width: 50%;
+}
+
+.right-column {
+	float: right;
+	width: 50%;
+	background-color: blue;
+	z-index: 7; 
+}
+
+.about-site-content {
+	width: 800px;
+	margin: auto;
+	padding-top: 200px;
+	background-color: pink;
+
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 500px) {
+
+
+h1 {
+	padding:0;
+}
+
+hr, p{
+	clear: both:
+}
+
+
+h1 {
+    position: relative;
+    margin-top: 2%;
+   	color: 70%;
+	color: #dbdbdb;
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+
+}
+
+p{
+	height: 15vh;
+	border-top: #dbdbdb;
+	font-size: .8rem;
+	line-height: 2em;
+	color: #dbdbdb;
+	font-weight: 100;
+	letter-spacing: .8px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+.site-header {
+	z-index: 2;
+
+}
+.site-content {
+
+
+
+
+
+
+
+}
+.site-footer {
+
+}
+
+/******************************************
+/* HELPER CLASSES
+/*******************************************/
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+     content: " ";
+     display: table;
+}
+.clearfix:after {
+     clear:both;
+}
+
+.is-hidden {
+     display: none;
+}
+.is-visible {
+     display: block;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES                   
+/*******************************************/
+
+
+
+

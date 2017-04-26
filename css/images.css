@@ -1,0 +1,176 @@
+/* 
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+*/
+
+/******************************************
+/* COLOURS
+/*******************************************/
+
+/* add a list of colours used in the project */
+
+/******************************************
+/* SENSIBLE DEFAULTS                   
+/*******************************************/
+
+* {
+     box-sizing: border-box;
+}
+img {
+	max-width:100%;
+}
+
+/******************************************
+/* TYPOGRAPHY
+/*******************************************/
+
+/* add type styles here */
+
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+
+
+
+
+/*subnav-PHOTOGRAPHY PAGE*/
+
+
+
+.black-bar {
+	height: 100px;
+	background-color: black;
+	z-index: 1;
+	position: fixed;
+	clear:both;
+	width: 100%;
+}
+
+
+.photography-page {
+	background-color: black;
+}
+
+.sub-nav {
+	position: fixed;
+	float: left;
+	width: 20px;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.sub-nav ul{
+	width: 500px;
+}
+.sub-nav ul li {
+	list-style: none;
+	padding: 2px;
+}
+
+.sub-nav ul li a {
+	color:white;
+	text-decoration: none;
+}
+
+.image-slideshow-container ul{
+	padding-right: 5%;
+	margin-top: 200px;
+}
+
+
+.image-slideshow-container ul li img {
+    width: 70%;
+    float: right;
+}
+
+
+
+
+
+
+/*MOBILE*/
+
+@media only screen and (max-width: 500px) {
+
+.site-content {
+	padding: 25px;
+}
+.image-slideshow-container ul{
+	padding:0;
+	margin:auto;
+}
+
+
+.image-slideshow-container ul li img {
+    width: 100%;
+    clear: both;
+}
+
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+
+.sub-nav li a{
+	color: white;
+	padding: 0 2%;
+	text-decoration: none;
+    font-size: .8rem;
+    font-weight: 300;
+    line-height: 1em;
+    letter-spacing: 1.4px;
+    display: inline;
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+}
+
+
+
+
+
+.site-header {
+
+}
+.site-content {
+
+}
+.site-footer {
+
+}
+
+/******************************************
+/* HELPER CLASSES
+/*******************************************/
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+     content: " ";
+     display: table;
+}
+.clearfix:after {
+     clear:both;
+}
+
+.is-hidden {
+     display: none;
+}
+.is-visible {
+     display: block;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES                   
+/*******************************************/
+
+
+
+

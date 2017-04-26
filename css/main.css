@@ -1,0 +1,315 @@
+/* 
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+*/
+
+/******************************************
+/* COLOURS
+/*******************************************/
+
+/* add a list of colours used in the project */
+
+/******************************************
+/* SENSIBLE DEFAULTS                   
+/*******************************************/
+
+* {
+     box-sizing: border-box;
+}
+img {
+	max-width:100%;
+}
+
+
+
+html {
+	background: #000;
+}
+
+/******************************************
+/* TYPOGRAPHY
+/*******************************************/
+
+/* add type styles here */
+
+
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+
+
+@media screen and (min-width: 500px) {
+
+
+.controls {}
+
+
+i {
+	border: solid 1px lightblue;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 15px;
+    position: fixed;
+	top: 50%;
+	transform: translate(-50%, -50%);
+    
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    right:20px;
+
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    left:20px;
+}
+
+
+article {
+	width: 45%;/*620px;*/
+	height: 100vh;
+	padding: 0 30px;
+	display: inline-block;
+	margin-top:150px; 	
+}
+
+
+
+iframe {
+	max-width: 100%;
+}
+
+.film-info {
+	margin: 0 5% 0 0;
+ 
+}
+
+
+.film-info  h1 {
+    position: relative;
+    margin-top: 2%;
+    display: block;
+	color: #dbdbdb;
+    width: 30%;
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+	font-family: 'Merriweather', serif;
+    padding: 3% 0 2% 15%;
+
+}
+
+.film-info p, h2 {
+
+	font-size: .7rem;
+	line-height: 2em;
+	font-weight: 300;
+
+}
+
+
+.film-info p{
+	height: 15vh;
+	border-top: #dbdbdb;
+	float: right;
+	width: 70%;
+	color: #dbdbdb;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: .8px;
+	padding-right: 2%;
+
+}
+hr {
+	border-top: solid #dbdbdb 1px;
+	width: 15%;
+	margin-right: 55%;
+	float:right;
+
+}
+
+.detail {
+	float: right;
+	width: 70%;
+	text-align: left;
+}
+
+.detail h2{
+	display: inline;
+	margin: 0 5% 0 0;
+	border-top: solid #dbdbdb 1px;
+	padding: 2% 5% 0 0;
+	font-weight: 100;
+	color: #dbdbdb;
+	text-align: right;
+}
+
+}
+
+
+
+
+
+@media only screen and (max-width: 500px) {
+
+
+article {
+    width: 100%;
+    padding: 5%;
+    height: 100vh;
+}
+
+
+.film-info h1 {
+	padding:0;
+}
+
+.film-info hr, p{
+	clear: both:
+}
+
+
+
+iframe {
+	max-width: 100%;
+}
+
+
+.film-info  h1 {
+    position: relative;
+    margin-top: 2%;
+   	color: 70%;
+	color: #dbdbdb;
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+
+}
+
+
+.film-info p{
+	height: 15vh;
+	border-top: #dbdbdb;
+	font-size: .8rem;
+	line-height: 2em;
+	color: #dbdbdb;
+	font-weight: 100;
+	letter-spacing: .8px;
+}
+
+hr {
+	display: none;
+
+}
+
+.detail {
+	display: inline-block;
+	width: 100%;
+	text-align: right;
+	
+}
+
+
+
+.detail h2{
+	display: inline;
+	margin: 0 5% 0 0;
+	border-top: solid #dbdbdb 1px;
+	padding: 2% 5% 0 0;
+	color: #dbdbdb;
+	text-align: right;
+	font-size: .8rem;
+	font-weight: 300;
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+.site-header {
+	z-index: 2;
+
+}
+.site-content {
+
+
+
+
+
+
+
+}
+.site-footer {
+
+}
+
+/******************************************
+/* HELPER CLASSES
+/*******************************************/
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+     content: " ";
+     display: table;
+}
+.clearfix:after {
+     clear:both;
+}
+
+.is-hidden {
+     display: none;
+}
+.is-visible {
+     display: block;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES                   
+/*******************************************/
+
+
+
+
