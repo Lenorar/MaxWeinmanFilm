@@ -1,102 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-    	<meta charset="utf-8">
-    	<meta name="description" content="site description goes here">
-    	<meta name="keywords" content="site, keywords, go, here">
-		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-		<title>Max Weinman</title>
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/intro.css">
-		<link rel="stylesheet" href="css/main.css">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Inconsolata|Merriweather:300,300i,400" rel="stylesheet">
-	</head>
-	<body>
-		<div class="site-container">
-			<header class="site-header">
-				<nav class="clearfix">
-					<h1>Max Weinman</h1>
-						<ul>
-							<li>									
-								<a href="index.html">Narratives</a>
-							</li>
-							<li>
-								<a href="#">Notes</a>
-							</li>
-							<li>
-								<a href="photography.html">Photography</a>
-							</li>
-							<li>
-								<a href="#">About</a>							
-							</li>
-						</ul>
-				</nav>
-			</header>
-			<main class="site-content">
-				<div class="controls clearfix">
-					<i class="arrow left"></i>
-					<i class="arrow right"></i>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="site description goes here">
+	<meta name="keywords" content="site, keywords, go, here">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<title>Max Weinman</title>
+	<link rel="stylesheet" href="js/slick/slick.css">
+	<link rel="stylesheet" href="js/slick/slick-theme.css">
+
+	<link rel="stylesheet" href="scss/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata|Merriweather:300,300i,400" rel="stylesheet">
+
+
+	<link rel="style" href="js/slicknav/slicknav.css">
+
+</head>
+<body>
+	<div class="site-container">
+		<header class="site-header clearfix">
+			<a class="title" href="home.html">Max Weinman</a>
+			<ul id="menu">
+				<li class="hvr-underline-from-center"><a href="index.html">Films</a></li>
+				<li class="hvr-underline-from-center"><a href="photography.html">Photography</a></li>
+				<li class="hvr-underline-from-center"><a href="about.html">About</a></li>
+			</ul>
+		</header>
+
+		<main class="site-content">
+			<div class="film-buttons">
+				<a class="film-button hvr-underline-from-center" href=".narratives">narratives</a>	
+				<a class="film-button hvr-underline-from-center" href=".notes">notes</a>						
+
+			</div>
+
+
+			<div class="row">
+				<div class="film-container narratives">
+					<div class="film">
+						<iframe src="https://player.vimeo.com/video/111223065" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					</div>
+					<div class="film-info clearfix">
+						<h1>Weathering</h1>
+						<hr>
+						<p class="description">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+						<div class="detail clearfix">					
+							<h2>2015</h2>
+							<h2>16mm</h2>
+							<h2>B&W</h2>
+							<h2>Syzygy</h2>
+						</div>
+					</div>
 				</div>
-				<article>
+				<div class="film-container narratives">
 					<div class="film">
 						<iframe src="https://player.vimeo.com/video/40035108?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 					</div>
-					<div class="film-info" class="clearfix">
+					<div class="film-info clearfix">
 						<h1>Apsis</h1>
 						<hr>
 						<p class="description">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 						</p>
 						<div class="detail clearfix">
-							<h2>2015</h2>
-							<h2>New York</h2>
+
+							<h2>2011</h2>
+							<h2>16mm</h2>
+							<h2>B&W</h2>	
+							<h2>Syzygy</h2>							
 						</div>
 					</div>
-				</article>
-				<article>
+				</div>
+				<div class="film-container notes">
 					<div class="film">
-						<iframe src="https://player.vimeo.com/video/23501192?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						<iframe src="https://player.vimeo.com/video/119654916" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 					</div>
-					<div class="film-info" class="clearfix">
-						<h1>
-							Weathering
-						</h1>
+					<div class="film-info clearfix">
+						<h1>Tog</h1>
 						<hr>
-						<p class="">
-							“Portiragnes” is a portrait of a small working-class town in the south of France where I spent a month every summer for fifteen years. It was shot over the summer and winter, 2010-11.
+						<p class="description">
+							A train ride from Oslo to Bergen, Norway.
 						</p>
 						<div class="detail clearfix">
-							<h2>2010-11</h2>
-							<h2>South of France</h2>
+							<h2>2016</h2>
+							<h2>16mm</h2>
+							<h2>Color</h2>
+							<h2>Silent</h2>
 						</div>
 					</div>
-				</article>
-				<article>
+				</div>
+				<div class="film-container notes">
 					<div class="film">
-						<iframe src="https://player.vimeo.com/video/53052376?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						<iframe src="https://player.vimeo.com/video/53052376" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 					</div>
-					<div class="film-info" class="clearfix">
+					<div class="film-info clearfix">
 						<h1>
 							Park Güell
 						</h1>
 						<hr>
-						<p class="">
+						<p class="description">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 						</p>
 						<div class="detail clearfix">
-							<h2>#</h2>
-							<h2>Park Güell in Barcelona</h2>
+							<h2>2011</h2>
+							<h2>16mm</h2>
+							<h2>Color</h2>
+							<h2>Silent</h2>
 						</div>
 					</div>
-				</article>
+				</div>
+				<div class="film-container notes">
+					<div class="film">
+						<iframe src="https://player.vimeo.com/video/23458005" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					</div>
+					<div class="film-info clearfix" >
+						<h1>
+							North South
+						</h1>
+						<hr>
+						<p class="description">
+							A travelogue of a two-month cross country trip.
+						</p>
+						<div class="detail clearfix">
+							<h2>2011</h2>
+							<h2>16mm</h2>
+							<h2>B&W Color</h2>
+							<h2>Silent</h2>
+						</div>
+					</div>
+				</div>
+				<div class="film-container notes">
+					<div class="film">
+						<iframe src="https://player.vimeo.com/video/23501192" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					</div>
+					<div class="film-info clearfix">
+						<h1>
+							Portiragnes
+						</h1>
+						<hr>
+						<p class="description">
+							A travelogue of a two-month cross country trip.
+						</p>
+						<div class="detail clearfix">
+							<h2>2011</h2>
+							<h2>16mm</h2>
+							<h2>Color</h2>
+						</div>
+					</div>
+				</div>
+				<div class="film-container notes">
+					<div class="film">
+						<iframe src="https://player.vimeo.com/video/34153324" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					</div>
+					<div class="film-info clearfix">
+						<h1>
+							Drive Back
+						</h1>
+						<hr>
+						<p class="description">
+							A travelogue of a two-month cross country trip.
+						</p>
+						<div class="detail clearfix">
+							<h2>2012</h2>
+							<h2>Hi-8</h2>
+							<h2>Color</h2>
+						</div>
+					</div>
+				</div>
+				<div class="film-container notes">
+					<div class="film">
+						<iframe src="https://player.vimeo.com/video/29754906" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>							</div>
+						<div class="film-info clearfix">
+							<h1>
+								La Boite
+							</h1>
+							<hr>
+							<p class="description">
+								A tsakdjslkadj
+							</p>
+							<div class="detail clearfix">
+								<h2>2011</h2>
+								<h2>iPhone</h2>
+								<h2>B&W</h2>
 
+								<h2>Silent</h2>
+							</div>
+						</div>
+				</div>
+				</div>
 			</main>
 			<footer class="site-footer">
-				&copy; CHANGE_THE_YEAR
 			</footer>
 		</div><!-- .site-container -->
+
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="js/slick/slick.min.js"></script>
 		<script src="js/main.js"></script>
-	</body>
-</html>
+		<script>
+			$('.row').slick({
+
+				arrows: true,
+			  // autoplay: true,
+			  pauseOnFocus:true,
+			  pauseOnHover: true,
+
+			  centerMode: true,
+			  centerPadding: '0px',
+			  slidesToShow: 3,
+
+
+			  // focusOnSelect: true;
+			  // arrows:true;
+
+			  // autoplay: true
+			  // accessibility: true
+
+
+			  responsive: [
+			  {
+			  	breakpoint: 800,
+			  	pauseOnFocus:true,
+
+			  	settings: {
+			  		arrows: true,
+			  		centerMode: true,
+			  		centerPadding: '0px',
+			  		slidesToShow: 2,
+			       	// autoplay: true
+
+
+			       }
+			   },    
+			   {
+			   	breakpoint: 480,
+			   	settings: {
+			   		arrows: true,
+			   		centerMode: true,
+			   		centerPadding: '5px',
+			   		slidesToShow: 1
+			   	}
+			   }
+			   ]
+			});
+
+			//     {
+			//       breakpoint: 480,
+			//       settings: {
+
+			//         arrows: true,
+			//         centerMode: true,
+			//         centerPadding: '50px',
+			//         slidesToShow: 3.
+			//     }
+			//   ]
+
+			// });
+
+
+			$(document).keypress(function (e){ 
+				    if(e.keyCode == 37) // left arrow
+				    {
+				        // your action here, for example
+
+				    }
+				    else if(e.keyCode == 39)    // right arrow
+				    { 
+				        // your action here, for example
+				    }
+				});
+			
+
+			</script>
+			<script>
+				$('.carousel-content').slick({
+					prevArrow:"<img class='a-left control-c prev slick-prev' src='img/icon.jpg'>",
+				});
+			</script>
+			<script src="js/slicknav/jquery.slicknav.js"></script>
+			<script>
+				$(function(){
+					$('#menu').slicknav();
+				});
+			</script>
+		</body>
+		</html>

@@ -1,0 +1,222 @@
+/* 
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+*/
+
+/******************************************
+/* COLOURS
+/*******************************************/
+
+/* add a list of colours used in the project */
+
+/******************************************
+/* SENSIBLE DEFAULTS                   
+/*******************************************/
+
+* {
+     box-sizing: border-box;
+}
+img {
+	max-width:100%;
+}
+
+/******************************************
+/* TYPOGRAPHY
+/*******************************************/
+
+/* add type styles here */
+
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+/*subnav-PHOTOGRAPHY PAGE*/
+
+.photography-page {
+	background-color: black;
+}
+
+.sub-nav {
+  width: 15px;
+  z-index: 2;
+
+  a {
+    text-align: left;
+    margin: 0;
+  }
+}
+
+
+
+
+
+.image-slideshow-container ul{
+  margin: 0;
+}
+
+
+.image-slideshow-container  ul{
+  width: 100%;
+  float: right;
+  margin-bottom: 5px;
+}
+
+
+
+
+/*center horizontal*/
+.sub-nav {
+	position: fixed;
+	float: left;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	margin-left: 10%;
+}
+
+
+
+.image-slideshow-container ul{
+	margin-top: 100px;
+}
+
+
+.image-slideshow-container ul li img {
+    width: 70%;
+    float: right;
+    margin-bottom: 5px;
+}
+
+
+
+
+/*MOBILE*/
+
+@media only screen and (max-width: 500px) {
+
+.site-content {
+	padding: 25px;
+}
+.image-slideshow-container ul{
+	padding:0;
+	margin:auto;
+}
+
+
+.image-slideshow-container ul li img {
+    width: 100%;
+    clear: both;
+}
+
+.sub-nav {
+  width: 200px;
+  a {
+    padding: 0;
+    margin-left: 60px;
+    text-decoration: none;
+    color:white;
+  }
+  li:hover {
+    color:$color;
+  }
+}
+}
+
+// hovers 
+.hvr-overline-from-left {
+  display: block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;
+  max-width: 100px;
+  margin: 5px;
+  padding: 8px 0 10px;
+}
+.hvr-overline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  top: 0;
+  background: $color;
+  height: 1px;
+  border-color:blue;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-overline-from-left:hover:before, .hvr-overline-from-left:focus:before, .hvr-overline-from-left:active:before {
+  right: 0;
+}
+
+
+
+.hvr-overline-from-left:hover {
+  color:$color;
+}
+
+.site-header {
+
+}
+.site-content {
+
+}
+.site-footer {
+
+}
+
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+     content: " ";
+     display: table;
+}
+.clearfix:after {
+     clear:both;
+}
+
+.is-hidden {
+     display: none;
+}
+.is-visible {
+     display: block;
+}
+
+/******************************************
+/* HELPER CLASSES
+/*******************************************/
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+     content: " ";
+     display: table;
+}
+.clearfix:after {
+     clear:both;
+}
+
+.is-hidden {
+     display: none;
+}
+.is-visible {
+     display: block;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES                   
+/*******************************************/
+
+
+
+

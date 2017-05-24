@@ -1,0 +1,172 @@
+//build mobile here//
+$color:#b5decb;
+
+
+
+@media only screen and (max-width: 500px) {
+
+
+header {
+    position: fixed; /* Make it stick, even on scroll */
+    width: 100%;
+}
+
+}
+.title {
+    float: left;
+    position: absolute;
+    padding: 10px 0;
+}
+
+
+#menu {
+        display:none;
+    }
+    
+    .js .slicknav_menu {
+        display:block;
+    }
+
+.slicknav_menu {
+    background: black;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+  .slicknav_menutxt {
+    display: none;
+  }
+
+
+}
+
+ 
+
+
+.slicknav_btn {
+    background-color: black;
+    border-radius: 0;
+}
+
+
+    .slicknav_nav a {
+        border-top:1px solid black;
+
+    }
+
+
+    .slicknav_nav a:hover {
+      background: black;
+      border-top:1px solid $color;
+      color: $color; 
+      border-radius: 0;
+  }
+
+
+
+
+a.title {
+  color: white; 
+  margin: 0 4%;
+  text-decoration: none;
+}
+
+//desktop nav//
+@media only screen and (min-width: 500px) {
+
+#menu {
+        display:block;
+    }
+
+a.title {
+  height: 95px;
+}
+
+
+
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: $color;
+  height: 1px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+
+header {
+    position: fixed; /* Make it stick, even on scroll */
+    width: 100%;
+}
+
+.title {
+    float: left;
+    padding: 35px 0;
+
+
+}
+#menu li {
+  display: inline;
+  font-size: 1rem;
+  margin: 2%;
+  font-weight: lighter;
+  line-height: 1em;
+  letter-spacing: 1px;
+}
+
+
+#menu {
+    float:right;
+    // position: fixed;
+
+}
+     ul {
+        list-style-type: none;
+        padding: 35px 0;
+        margin: 0 4% 0 0;
+        text-align: right;
+        width: 300px;
+    }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .slicknav_menu {
+            display:none;
+        }
+
+
+#menu ul li a, .sub-nav li a, .title {
+    color: white;
+    text-decoration: none;
+    font-size: .8rem;
+    font-weight: 300;
+    // line-height: 1em;
+    letter-spacing: 1.2px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+}
+
+

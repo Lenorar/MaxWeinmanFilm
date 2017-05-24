@@ -6,52 +6,50 @@
     	<meta name="keywords" content="site, keywords, go, here">
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 		<title>Max Weinman</title>
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/intro.css">
-		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/about.css">
+		<link rel="stylesheet" href="scss/style.css">		
+		<link rel="style" href="js/slicknav/slicknav.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Inconsolata|Merriweather:300,300i,400" rel="stylesheet">
+
+
 	</head>
 	<body>
 		<div class="site-container">
-			<header class="site-header">
-				<nav class="clearfix">
-					<h1>Max Weinman</h1>
-						<ul>
-							<li>									
-								<a href="index.html">Narratives</a>
-							</li>
-							<li>
-								<a href="#">Notes</a>
-							</li>
-							<li>
-								<a href="photography.html">Photography</a>
-							</li>
-							<li>
-								<a href="#">About</a>							
-							</li>
-						</ul>
-				</nav>
+			<header class="site-header clearfix">
+					<a class="title" href="home.html">Max Weinman</a>
+					<ul id="menu">
+						<li class="hvr-underline-from-center"><a href="index.html">Films</a></li>
+						<li class="hvr-underline-from-center"><a href="photography.html">Photography</a></li>
+						<li class="hvr-underline-from-center"><a href="about.html">About</a></li>
+					</ul>
 			</header>
-
-
 			<main class="about-site-content clearfix">
 				<div class="left-column clearfix">
-					<h1>Max Weinman</h1>
 					<hr>
 					<p>Inquiries and information:</p>
 					<a href="mailto:maxweinman@gmail.com">maxweinman@gmail.com</a>
-					<p>Interview and press</p>
-					<a href="http://www.takeonecff.com/2012/apsis-interview-with-max-weinman">Interview on APSIS by Rosy Hunt for Cambridge FilmFestival's publication, TAKE ONE</a>
-					<a href="http://www.nypress.com/world-max-weinmans-lens/">Interviewed by Noah Wunsch for NY Press</a>
+					<div class="interview">
+						<ul>
+							<li>
+							<a href="http://www.takeonecff.com/2012apsis-interview-with-max-weinman">Interview on APSIS by Rosy Hunt for Cambridge FilmFestival's publication, TAKE ONE</a></li>
+							<li>
+								<a href="http://www.nypress.com/world-max-weinmans-lens/">Interviewed by Noah Wunsch for NY Press</a>
+							</li>
+						</ul>
+					</div>
 					<a href="#">Screenings</a>
 				</div>
-<!-- 				<div class="right-column clearfix">
-					<p>ipsum dolor sit amet, consectetur adipiscing elit. Ut et lacinia purus, non volutpat ligula. Integer accumsan est at nibh condimentum, a vehicula enim cursus. Sed vehicula libero turpis, vel imperdiet nisi elementum non. Sed malesuada dui dui, at vehicula purus consectetur eu. Morbi rutrum, nisi non rutrum posuere, ipsum nibh aliquam massa, et fermentum velit ligula eu velit. Pellentesque eget tincidunt turpis. Fusce ante diam, sagittis et augue vitae, maximus mattis sem. Aliquam faucibus nisi lacinia, congue elit quis, convallis velit. Etiam a eros nec dolor rutrum porttitor a ac diam. Mauris tristique nunc vitae enim euismod, a maximus tellus eleifend. Sed commodo tortor enim, eget consequat magna finibus nec. Sed sollicitudin elit eget sem volutpat, vel tristique lorem scelerisque. Quisque et pulvinar sem. Quisque vulputate leo sit amet nisi lacinia pellentesque. Donec fringilla metus ante, in rhoncus est feugiat id.</p>
-				</div> -->
+				<div class="right-column clearfix">
+					<p>Max Weinman's growing body of work falls into two distinct approaches: observational films, in which filmed moments from day-to-day life are edited into reflections, landscape studies, and visual poems, and a trilogy of short films entitled Syzygy. Of the later, Apsis (2012) and Weathering (2015) are the first two installments, the third is under development. Max’s films have shown at universities and festivals around the world.
+					</p>
+				</div>
 		</div><!-- .site-container -->
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script src="js/main.js"></script>
+		<script src="js/slicknav/jquery.slicknav.js"></script>
+		<script>
+			$(function(){
+				$('#menu').slicknav();
+			});
+		</script>
 	</body>
 </html>

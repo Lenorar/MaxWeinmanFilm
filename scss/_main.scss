@@ -1,0 +1,374 @@
+/*
+Project Name: Max Weinam - Narrative Page
+Client: Max Weinman
+Author: Your Name
+*/
+
+/******************************************
+/* COLOURS
+/*******************************************/
+
+/* add a list of colours used in the project */
+$color:#b5decb;
+
+
+/******************************************
+/* SENSIBLE DEFAULTS
+/*******************************************/
+
+* {
+     box-sizing: border-box;
+}
+img {
+    max-width:100%;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+
+@media screen and (min-width: 768px) {
+h1 {
+    position: absolute;
+    z-index: 1;
+    font-size: 1rem;
+    font-weight: lighter;
+    line-height: 1em;
+    letter-spacing: 1px;
+    display: inline;
+    padding-left: 4%;
+    margin:0;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+i {
+    border: solid 1px lightblue;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 15px;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    right:20px;
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    left:20px;
+}
+
+.row {
+  // width: 1000%;
+  height: 100vh;
+  // overflow-y: scroll;
+}
+
+.film-container {
+    width: 700px;
+    height: 100vh;
+    // display: inline-block;
+    margin-top:100px;
+    vertical-align: top;
+}
+
+
+iframe {
+    max-width: 100%;
+}
+
+.film-info {
+    margin: 0 5% 0 0;
+    padding: 0 12%;
+}
+
+.film-info  h1 {
+    position: relative;
+    margin-top: 2%;
+    display: block;
+    color: #dbdbdb;
+    /*width: 30%;*/
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-family: 'Merriweather', serif;
+    padding: 10px 0 20px;
+}
+
+.film-info p, h2 {
+    font-size: .7rem;
+    line-height: 2em;
+    font-weight: 300;
+}
+
+
+.film-info p{
+    height: 15vh;
+    border-top: #dbdbdb;
+    color: #dbdbdb;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: .8px;
+    padding-top: 10px;
+}
+
+hr {
+    border-top: solid #dbdbdb 1px;
+    width: 15%;
+    float:left;
+    margin: 0;
+}
+
+.detail {
+    width: 100%;
+    text-align: right;
+}
+
+.detail h2 {
+    display: inline;
+    margin: 0 5% 0 0;
+    border-top: solid #dbdbdb 1px;
+    padding: 2% 5% 0 0;
+    font-weight: 100;
+    color: #dbdbdb;
+    text-align: right;
+}
+
+
+.description {
+    margin-bottom: 20px;
+}
+}
+
+
+.slick-next::before {
+        background: url('../img/arrowright.svg') no-repeat;
+        content: "";
+        height: 50px;
+        width: 50px;
+        float: right;
+        margin-left: 50px;
+}
+
+
+.slick-prev:before {
+        background: url('../img/arrowleft.svg') no-repeat;
+        content: "";
+        height: 50px;
+        width: 50px;
+        float: left;
+        margin-right: 50px;
+}
+
+
+.slick-prev, .slick-next {
+    top: 10px;
+    z-index: 3;
+
+}
+
+
+.slick-prev
+{
+    position: fixed;
+    left: 8%;
+    top: 15%;
+}
+.slick-next
+{
+    position: fixed;
+    right: 8%;
+    top: 15%;
+
+}
+
+
+//narrative + notes buttons
+
+.film-buttons {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 85px;
+    position: fixed;
+    z-index: 1;
+
+
+    a {
+        margin: 0 1rem;
+        color:$color;
+
+    }
+}
+
+
+.film-container:not(.active) {
+     display: none;
+ }
+
+
+
+// @media screen and (min-device-width: 481px) and (max-device-width: 768px) { 
+//     p {
+//         color: green;
+//     }
+// .film-info p, h2 {
+//     font-size: .7rem;
+//     line-height: 2em;
+//     font-weight: 300;
+// }
+
+// }
+
+.film-info {
+    height: 600px;
+}
+
+@media only screen and (max-width: 800px) {
+
+
+.film-container {
+    margin-top: 150px;
+}
+
+.row {
+  // width: 1000%;
+  height: 100vh;
+  // overflow-y: scroll;
+}
+
+
+.film-info h1 {
+    padding:0;
+}
+
+.film-info hr, p{
+    clear: both;
+}
+
+
+iframe {
+    max-width: 100%;
+}
+
+.film-info {
+     padding: 40px;
+     padding-top: 0;
+}
+
+.film-info  h1 {
+    position: relative;
+    margin-top: 2%;
+    color: 70%;
+    color: #dbdbdb;
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-family: 'Merriweather', serif;
+
+}
+
+
+.film-info p {
+    height: 15vh;
+    border-top: #dbdbdb;
+    font-size: .8rem;
+    line-height: 2em;
+    color: #dbdbdb;
+    font-weight: 100;
+    letter-spacing: .8px;
+}
+
+hr {
+    display: none;
+
+}
+
+.detail {
+    display: block;
+    width: 100%;
+    text-align: right;
+    margin-top: 20px;
+}
+
+.detail h2{
+    display: inline;
+    border-top: solid #dbdbdb 1px;
+    padding: 2% 5% 0 0;
+    color: #dbdbdb;
+    text-align: right;
+    font-size: .8rem;
+    font-weight: 300;
+}
+
+.film-buttons {
+    display: none;
+}
+}
+
+
+
+@media only screen and (max-width: 480px) {
+.film-container {
+    margin-top: 10px;
+}
+
+.detail {
+    text-align: left;
+}
+
+.site-content {
+    padding: none;
+}
+}
+
+
+.site-header {
+    z-index: 2;
+
+}
+.site-content {
+
+
+
+
+
+
+
+}
+.site-footer {
+
+}
+
+/******************************************
+/* HELPER CLASSES
+/*******************************************/
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+     content: " ";
+     display: table;
+}
+.clearfix:after {
+     clear:both;
+}
+
+.is-hidden {
+     display: none;
+}
+.is-visible {
+     display: block;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

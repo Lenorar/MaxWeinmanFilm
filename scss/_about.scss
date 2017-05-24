@@ -1,0 +1,246 @@
+/* 
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+*/
+
+/******************************************
+/* COLOURS
+/*******************************************/
+
+/* add a list of colours used in the project */
+
+/******************************************
+/* SENSIBLE DEFAULTS                   
+/*******************************************/
+
+* {
+     box-sizing: border-box;
+}
+
+html {
+	background-color: white;
+}
+img {
+	max-width:100%;
+}
+/******************************************
+/* TYPOGRAPHY
+/*******************************************/
+
+/* add type styles here */
+
+
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+
+
+.about-site-content {
+	width: 50%;
+	margin: auto;
+	padding-top: 20%;
+	height: 100vh;
+}
+
+
+p, h2, a {
+	font-size: .8rem;
+	line-height: 2em;
+	font-weight: 300;
+}
+
+
+p {
+	border-top: #dbdbdb;
+	color: #dbdbdb;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: .8px;
+	margin:0;
+}
+
+.about-site-content hr {
+	border-top: dotted #dbdbdb 1px;
+	border-bottom: none;
+	width: 90%;
+	margin: 3% 0;
+	line-height: 1px;
+}
+
+
+
+.left-column {
+	float: left;
+	width: 50%;
+}
+
+.right-column {
+	float: right;
+	width: 50%;
+}
+
+
+.left-column a {
+	color: #dbdbdb;
+	border-bottom: dotted 1px #dbdbdb;
+	text-decoration: none;
+}
+
+.left-column p {
+	margin-top: 20%;
+}
+
+
+.interview {
+
+	ul {
+		padding: 0;
+		text-align: left;
+	}
+	
+	 li{
+		// padding: 2% 0px;
+		width: 80%;
+		display: block;
+	}
+}
+
+
+
+
+// @media only screen and (max-width: 768px) {
+// 	p {
+// 		color: blue;
+
+// 	.about-site-content {
+// 		width: 50px;
+// 	}
+// }
+// }
+
+
+@media only screen and (max-width: 1000px) {
+
+.about-site-content {
+	width: 90%;
+	margin: auto;
+	padding-top: 12%;
+}
+
+hr {
+	display: none;
+}
+.right-column {
+	width: 100%;
+}
+
+
+.about-site-content h1{
+	visibility: hidden;
+}
+
+.left-column {
+	width: 100%;
+}
+
+.left-column p {
+	margin-top: 20px;
+}
+
+.right-column p {
+	padding: 20px 0;
+}
+
+
+
+h1 {
+	padding:0;
+}
+
+hr, p{
+	clear: both;
+}
+
+
+h1 {
+    position: relative;
+   	color: 70%;
+	color: #dbdbdb;
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.right-column p{
+	border-top: white solid 1px;
+	font-size: .8rem;
+	margin-top: 20px;
+
+	line-height: 2em;
+	color: #dbdbdb;
+	font-weight: 100;
+	letter-spacing: .8px;
+}
+
+}
+
+
+
+	.interview li {
+		margin: 20px 0;
+	}
+
+
+
+
+
+
+
+
+
+
+
+.site-content {
+
+
+
+
+
+
+
+}
+.site-footer {
+
+}
+
+/******************************************
+/* HELPER CLASSES
+/*******************************************/
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+     content: " ";
+     display: table;
+}
+.clearfix:after {
+     clear:both;
+}
+
+.is-hidden {
+     display: none;
+}
+.is-visible {
+     display: block;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES                   
+/*******************************************/
+
+
+
+
